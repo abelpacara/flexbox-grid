@@ -33,11 +33,18 @@
   background-color: var(--item-bg);
   border: 2px solid black;
   border-radius: 5px;
+}
+
+.item1 {
+  text-align: center;
+  background-color: var(--item-bg);
+  border: 2px solid black;
+  border-radius: 5px;
   width: var(--item-width);
   height: var(--item-height);
 }
 
-.item1 {
+.item2 {
   text-align: center;
   background-color: var(--item-bg);
   border: 2px solid black;

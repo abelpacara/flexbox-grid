@@ -1,0 +1,117 @@
+:root {
+  --body-bg: violet;
+}
+body {
+  background-color: var(--body-bg);
+}
+
+.header {
+  background-color: #ffdfba;
+}
+
+.nav {
+  background-color: #baffc9;
+  height: 50px;
+}
+
+.container {
+  gap: 5px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.sidebar {
+  background-color: #bae1ff;
+  width: 300px;
+}
+
+.sidebar_header {
+  background-color: #ffd6f9;
+  height: 40px;
+}
+
+.sidebar_nav {
+  background-color: #d8fff2;
+  height: 200px;
+}
+
+.sidebar_footer {
+  background-color: #a3b18a;
+  height: 50px;
+}
+
+.footer {
+  background-color: #5871a3;
+  color: #ffffff;
+  height: 70px;
+}
+
+.content {
+  flex-grow: 1;
+
+  display: flex;
+  background-color: blueviolet;
+  /* flex-grow:100; */
+  flex-wrap: wrap;
+  gap: 15px;
+
+  padding: 15px;
+}
+
+.product {
+  width: 150px;
+  height: 200px;
+  background-color: chocolate;
+  /* margin:15px; */
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+  .container {
+    gap: 5px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .sidebar {
+    flex-grow: 1;
+  }
+
+  .content {
+    flex-grow: 1;
+  }
+}
+
+/* Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  .container {
+    gap: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .sidebar {
+    flex-grow: 1;
+  }
+
+  .content {
+    flex-grow: 1;
+  }
+}
+
+/* Escritorios */
+@media (min-width: 769px) {
+  .container {
+    gap: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .sidebar {
+    flex-grow: 1;
+  }
+
+  .content {
+    flex-grow: 1;
+  }
+}
