@@ -4,22 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="hamburger-menu.css"/>
+    <link rel="stylesheet" href="./hamburger-menu.css" />
   </head>
   <body>
-    <div class="respmenu">
-      <input type="checkbox" />
-      <i class="fas fa-bars"></i>
-      <i class="fas fa-times"></i>
-      <nav>
-        <ul>
-          <li><a href="#">Item 1</a></li>
-          <li><a href="#">Item 2</a></li>
-          <li><a href="#">Item 3</a></li>
-          <li><a href="#">Item 4</a></li>
-          <li><a href="#">Item 5</a></li>
-        </ul>
-      </nav>
-    </div>
+    <nav class="navbar">
+      <div class="logo">Logo</div>
+      <h1>oferta!</h1>
+      <ul class="nav-links">
+        <li><a href="#" aria-label="Ir a la pagina de inicio">Inicio</a></li>
+        <li><a href="#" aria-label="Conoce mas sobre nosotros">Acerca</a></li>
+        <li>
+          <a href="#" aria-label="Explorar mnuestros servicio">Servicio</a>
+        </li>
+        <li>
+          <a href="#" aria-label="Contacnenos para mas informacion">Contactos</a>
+        </li>
+      </ul>
+      <div class="burger" arial-label="Abrir menu de navegacion">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>      
+    </nav>
+    <style>
+      
+    </style>
   </body>
 </html>
+<script>
+  const burger = document.querySelector(".burger");
+  const navLinks = document.querySelector(".nav-links");
+
+  burger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>

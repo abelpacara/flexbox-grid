@@ -1,4 +1,6 @@
-1. menu hamburguer
-2. breadcrumb
-3. main menu desktop
-4. main menu responsive
+1. main menu desktop       X
+2. main menu responsive    X
+3. menu hamburguer         X
+5. aplicar a la app store  
+
+4. breadcrumb
