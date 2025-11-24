@@ -1,0 +1,31 @@
+/* CSS for a basic Flexbox sidebar */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.sidebar-item {
+    padding: 10px;
+    margin: 5px;
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+/* Main content area next to the sidebar */
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+/* Sidebar colapsado */
+.sidebar.collapsed {
+  width: 60px;
+}
+
+/* Ajuste del contenido cuando sidebar colapsa */
+.content.expanded {
+  margin-left: 60px;
+}
